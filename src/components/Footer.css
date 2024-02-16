@@ -1,0 +1,97 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #262626;
+    color: #fff;
+    padding: 20px 0;
+    
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .footer-section p {
+    margin: 8px 0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 8px 0;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+
+  
+  .footer-icons {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-top: 8px;
+  }
+
+  
+  .secciones li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .secciones li a:hover {
+    color: gray;
+  }
+
+  .footer-text {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    
+  }
+
+  .footer-text:hover {
+    color: gray;
+  }
+
+  .mailIcon{
+    height: 20px;
+    width: 20px;
+  }
+
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      padding-left: 10px;
+    }
+  
+    .footer-section {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    
+    
+  }
+
+
+  @media screen and (min-width: 650px) and (max-width: 820px) {
+   .footer {
+    padding-top: 150px;
+   }
+  }

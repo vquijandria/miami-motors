@@ -1,0 +1,34 @@
+.img-carousel {
+    width: 40vw;
+    height: 50vh;
+    display: inline-block;
+}
+
+.carousel-item {
+    width: 40vw;
+}
+
+.carousel {
+    width: 40vw;
+    margin: 20px 0 0 50px;
+    display: block;
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 768px) {
+    .img-carousel {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .carousel-item {
+        width: 100vw;
+    }
+
+    .carousel {
+        width: 90vw;
+        margin: 20px 0 0 0;
+        margin: 0 0 0 15px;
+    }
+}

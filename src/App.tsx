@@ -1,7 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
-import { About, Contact, Home, Services } from "./components/pages";
+import { Cotiza, Contact, Home, About } from "./components/pages";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { ToastContainer } from "react-toastify";
 
 function App() {
   
@@ -9,13 +11,16 @@ function App() {
   return (
     <>
       <div className="App">
+        <header>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/cotiza" element={<Cotiza />} />
+        <Route path="/sobrenosotros" element={<About />} />
+        <Route path="/contacto" element={<Contact />} />
       </Routes>
+      </header>
+      <ToastContainer theme="dark"/>
     </div>
     </>
   )

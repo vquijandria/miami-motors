@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
+import navbarlogo from "./../assets/logo.png";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ export const Navbar = () => {
   return (
     <nav>
       <Link to="/" className="title">
-        Website
+        <img className="navbar_logo" src={navbarlogo} alt="" />
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
@@ -17,13 +18,16 @@ export const Navbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/">Inicio</NavLink>
         </li>
         <li>
-          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/cotiza">Cotiza</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/sobrenosotros">Sobre Nosotros</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contacto">Contactanos</NavLink>
         </li>
       </ul>
     </nav>

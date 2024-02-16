@@ -1,0 +1,81 @@
+/* Estilos generales */
+h1 {
+    color: white;
+  }
+  
+  .about-container {
+    padding-bottom: 50px;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+  
+    .text-container {
+      width: 100%;
+      max-width: none; /* Para eliminar el límite máximo de ancho */
+      padding: 20px;
+      background-color: black; /* Asegúrate de que el fondo sea transparente */
+    }
+
+    .about-container {
+        background-color: black;
+    }
+  
+    .texto {
+      width: 100%;
+    }
+  }
+  
+  /* Estilos para tabletas y dispositivos más grandes */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .content-container {
+      flex-direction: row;
+      padding: 20px 0 0 20px;
+    }
+  
+    .text-container {
+      width: 80vw;
+      background-color: black; /* Asegúrate de que el fondo sea transparente */
+    }
+  
+    .texto {
+      width: 100%;
+      padding: 20px 0 0 100px;
+    }
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media only screen and (min-width: 1025px) {
+    .content-container {
+      display: flex;
+      align-items: flex-start; /* Alinea los elementos en la parte superior */
+    }
+  
+    .carousel-container,
+    .text-container {
+      width: 50%; /* O ajusta según sea necesario */
+    }
+  
+    .text-container {
+      background-color: black; /* o el color que desees */
+      padding: 20px;
+      padding-top: 5vh;
+    }
+  
+    .texto {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+  
+  /* Estilos adicionales */
+  .texto {
+    color: white;
+    margin: 0; /* Asegúrate de que no haya márgenes externos */
+  }
+  

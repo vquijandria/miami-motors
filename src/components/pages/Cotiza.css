@@ -1,0 +1,47 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .cotiza-container {
+    display: flex;
+    justify-content: space-around; /* Puedes ajustar este valor según tu diseño */
+    align-items: center; /* Para centrar verticalmente los elementos */
+    margin-top: 20px;
+    background-color: black;
+    padding-bottom: 200px;
+  }
+  
+  .cotizaImg {
+    width: 38vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    
+  }
+  
+  /* Responsive style */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .cotiza-container {
+      flex-direction: column; /* Cambiar a columna en dispositivos más pequeños */
+      align-items: center; /* Centrar verticalmente en dispositivos más pequeños */
+      padding-bottom: 50px;
+    }
+  
+    .cotizaImg {
+      width: 90vw; /* Ajustar el ancho al 100% en dispositivos más pequeños */
+      height: auto;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+    }
+  }
+  

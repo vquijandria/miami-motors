@@ -1,0 +1,52 @@
+/* FormAutos.css */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: inline;
+  color: white;
+}
+
+.custom-select {
+  width: 250px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 8px;
+  text-align: center; /* Centrar el texto horizontalmente */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.custom-select:hover {
+  border-color: #ff0000; /* Cambia el color del borde al pasar el ratón por encima */
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); /* Agrega una sombra al pasar el ratón por encima */
+}
+
+.submit-button {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #cc0000; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    margin-right: 0;
+    margin-top: 5vh;
+  }
+}
